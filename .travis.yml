@@ -38,5 +38,25 @@ env:
 services:
   - postgresql
 
+cache:
+  # cache awscli and dependencies
+  pip: true
+  directories:
+    - cache
+
+before_cache:
+  - mkdir -p cache/
+
+  # Cache photos downloaded from Flickr so that we don't clobber them with HTTP
+  # requests on every build.
+  - echo "Caching photos directory"
+  - cp -r public/assets/photos/ cache/
+
 before_script:
   - createdb sorg-test
+
+  # Pull photos out of cache.
+  - echo "Uncaching photos directory"
+  - mkdir -p public/assets/
+  # The `|| :` suppresses a non-zero exit code if the cache doesn't exist.
+  - "cp -r cache/photos/ public/assets/ || :"
