@@ -10,7 +10,14 @@
       p
         img src="/assets/me.jpg"
       p
-        | I'm an engineer at Stripe, and am interested in service engineering, APIs, Vim, Tmux, Ruby, Go, terminal productivity, running, fixed gear riding, history, urban design, and metal. Recently, I also spent quite some time building the Heroku platform.
+        | I'm an engineer at Stripe, and am interested in service engineering, APIs, Vim, Tmux, Ruby, Go, terminal productivity, running, fixed gear riding, history, urban design, and metal.
+      h2 Work
+      h3 Stripe
+      p
+        | I currently work for Stripe.
+      h3 Heroku
+      p
+        | For a long time I worked for Heroku, 
       h2 Technology
       p
         | This site is a static set of HTML, JS, CSS, and image files built using a <a href="https://github.com/brandur/sorg">custom Go executable</a>, stored on S3, and served by a number of worldwide edge locations by CloudFront to help ensure great performance around the globe. It's deployed automatically by CI as code lands in its master branch on GitHub. The recipe is based on the ideas that I wrote about in <a href="/aws-intrinsic-static">the Intrinsic Static Site</a>.
