@@ -2,12 +2,24 @@ $sans_serif: helvetica, arial, geneva, sans-serif
 $secondary: #cdcdcd
 
 .fragments
+  font-size: 0.9rem
+  line-height: 1.5em
+
+  p
+    margin: 10px 0
+
   .fragments-title
     h1
       font-size: 1.2rem
       letter-spacing: 0
       hyphens: auto
       margin: 20px 0 5px 0
+
+  ol, ul
+    li
+      margin-bottom: 10px
+      margin-left: 20px
+      padding-left: 5px
 
   article
     h2, h3, h4
@@ -27,7 +39,9 @@ $secondary: #cdcdcd
     // Constrain very large screens. This pixel number should be enough to keep
     // us pegged to a maximum of four columns (things get pretty hard to read
     // with more).
-    max-width: 1500px
+    // 
+    // 
+    max-width: 1000px
 
     // Required to show TOC.
     position: relative
@@ -38,21 +52,18 @@ $secondary: #cdcdcd
       margin-bottom: 80px
       width: 100%
 
-    article.with-mood
-      column-width: 280px
-      -moz-column-width: 280px
-      -webkit-column-width: 280px
-      column-gap: 40px
-      -moz-column-gap: 40px
-      -webkit-column-gap: 40px
+    article
+      column-width: 220px
+      -moz-column-width: 220px
+      -webkit-column-width: 220px
+      column-gap: 30px
+      -moz-column-gap: 30px
+      -webkit-column-gap: 30px
 
       h1
         column-span: all
         -moz-column-width: all
         -webkit-column-width: all
-
-    article.without-mood
-      max-width: 550px
 
   .meta
     color: $secondary
