@@ -5,6 +5,8 @@ nav
     li
       a href="/articles" Articles
     li
+      a href="/glass" Passages & Glass
+    li
       a href="/fragments" Fragments
     li
       a href="/photos" Photos

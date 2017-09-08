@@ -1,0 +1,16 @@
+= content main
+  .flexcontainer
+    .flag
+    .top-nav
+      .nav-inner
+        = include views/_nav
+    .toc-index
+    .content
+      .content-inner-standard
+        #title
+          h1 Passages & Glass
+        #glass
+          p The details of most journeys are forgotten. It’s nothing intentional, but given enough time they stop coming up in conversation, we reflect on them more rarely, and they’re eventually swallowed by our fickle memories. Physical artifacts remain, but most of us are hopelessly bad at regularly sifting through a lifetime’s accumulation of photos and souvenirs.
+          p <em>Passages</em> refers to the routes that we use to get from one point to another, like Hannibal’s passage through the Alps, Magellan’s famous strait, or in the case of my far more mundane life, a favorite walking path from Friedrichshain to Kreuzberg. <em>Glass</em> is the material making up the face on my favorite products like the iPhone or Submariner, the window through which to watch the passing countryside by air or rail, or the intricate optics of my camera’s lens.
+          p <em>Passages & Glass</em> is also about supporting the independent web. It’s sent via the only universal medium of communication that we have (email) in the most open formats available (plain text and HTML), and is my infinitesimally small way of pushing back against the continued centralization and confinement of our stories in closed platforms like Facebook.
+          p <a href="https://passages-signup.herokuapp.com">Subscribe here</a>.
