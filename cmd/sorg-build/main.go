@@ -664,6 +664,7 @@ func compileArticlesIndex(articles []*Article) error {
 
 	locals := getLocals("Articles", map[string]interface{}{
 		"ArticlesByYear": articlesByYear,
+		"FlagColor":      "#000000",
 	})
 
 	err := renderView(sorg.MainLayout, sorg.ViewsDir+"/articles/index",
@@ -1501,6 +1502,7 @@ func fileExists(file string) bool {
 func getLocals(title string, locals map[string]interface{}) map[string]interface{} {
 	defaults := map[string]interface{}{
 		"BodyClass":         "",
+		"FlagColor":         "",
 		"GoogleAnalyticsID": conf.GoogleAnalyticsID,
 		"LocalFonts":        conf.LocalFonts,
 		"Release":           sorg.Release,
